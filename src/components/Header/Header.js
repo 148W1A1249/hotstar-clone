@@ -8,7 +8,7 @@ import MOVIES from '../../assets/images/movie-icon.svg';
 import SERIES from '../../assets/images/series-icon.svg';
 import DisneyLogo from '../../assets/images/logo.svg';
 import {auth, provider} from '../../firebase/firebase';
-import {selectUserName, selectUserEmail, selectUserPhoto, setUserLoginDetails, setSignOutState} from '../../features/user/userSlice'
+import {selectUserName, selectUserPhoto, setUserLoginDetails, setSignOutState} from '../../features/user/userSlice'
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router";
 import { useEffect } from "react";
@@ -68,23 +68,23 @@ const Header = (props) => {
               <img src={Home} alt="HOME" />
               <span>HOME</span>
             </a>
-            <a >
+            <a href="#">
               <img  src={SEARCH} alt="SEARCH" />
               <span>SEARCH</span>
             </a>
-            <a >
+            <a href="#">
               <img  src={WATCHLIST} alt="WATCHLIST" />
               <span>WATCHLIST</span>
             </a>
-            <a >
+            <a href="#">
               <img  src={ORIGINALS} alt="ORIGINALS" />
               <span>ORIGINALS</span>
             </a>
-            <a >
+            <a href="#">
               <img  src={MOVIES} alt="MOVIES" />
               <span>MOVIES</span>
             </a>
-            <a >
+            <a href="#">
               <img  src={SERIES} alt="SERIES" />
               <span>SERIES</span>
             </a>
